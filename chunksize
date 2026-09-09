@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n, chunkSize, chunks;
+    scanf("%d", &n);
+
+    scanf("%d", &chunkSize);
+
+    chunks = (n + chunkSize - 1) / chunkSize;
+
+    printf("Number of chunks = %d\n", chunks);
+
+    return 0;
+}
