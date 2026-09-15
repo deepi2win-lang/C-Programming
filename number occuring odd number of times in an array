@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main(){
+    int n,i,j,count,k;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++){
+        int found=0;
+        for(k=0;k<i;k++){
+            if(a[i]==a[k]){
+                found=1;
+                break;
+            }
+        }
+        if(found==1){
+            continue;
+        }
+        count=0;
+
+            for(j=0;j<n;j++){
+                if(a[i]==a[j]){
+                    count++;
+                }
+            
+            
+        }
+        if(count%2!=0){
+                printf("%d ",a[i]);
+            }
+        
+        
+    }
+
+    return 0;
+}
